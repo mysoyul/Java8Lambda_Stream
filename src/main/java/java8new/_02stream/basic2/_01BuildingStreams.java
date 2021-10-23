@@ -19,7 +19,8 @@ public class _01BuildingStreams {
 
         // Arrays.stream
         int[] numbers = {2, 3, 5, 7, 11, 13};
-        System.out.println(Arrays.stream(numbers).sum());
+        //IntStream의 sum()
+        System.out.println("SUM =" + Arrays.stream(numbers).sum());
 
         // Stream.iterate
         Stream.iterate(0, n -> n + 2)
@@ -73,6 +74,9 @@ public class _01BuildingStreams {
 
          System.out.println("There are " + uniqueWords + " unique words in data2.txt");
 
+         String myStr = "Hello \nabc";
+        Stream<String> lines = myStr.lines();
+        lines.filter(str -> str.length() == 3).forEach(System.out::println);
 
     }
 }

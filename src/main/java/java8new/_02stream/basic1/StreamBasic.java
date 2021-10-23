@@ -72,7 +72,6 @@ public class StreamBasic {
                 .sorted(dishComparator.reversed())  //Stream<Dish>
                 .map(Dish::getName)                 //Stream<String>
                 .collect(toList());                 //List<String>
-
     }
 
 
