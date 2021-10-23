@@ -1,6 +1,7 @@
 package java8new._02stream.basic1;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
 
@@ -10,10 +11,10 @@ public class StreamBasic {
         // Java 7
         getLowCaloricDishesNamesInJava7(Dish.menu).forEach(System.out::println);
 
-        System.out.println("---");
+        System.out.println("8 ---");
 
         // Java 8
-
+        getLowCaloricDishesNamesInJava8(Dish.menu).forEach(System.out::println);
 
     }
 
@@ -40,10 +41,15 @@ public class StreamBasic {
     }
 
     //Java 8
+    //Stream<Dish> -> Stream<String> -> List<String>
     public static List<String> getLowCaloricDishesNamesInJava8(List<Dish> dishes){
-        return null;
-    	
-    			
+        return dishes.stream() //Stream<Dish>
+                .filter(dish -> dish.getCalories() <= 400)   //Stream<Dish>
+                //.sorted(Comparator.comparing(dish -> dish.getCalories()))   //람다식
+                .sorted(Comparator.comparing(Dish::getCalories))              //Method Reference
+                //.map(dish -> dish.getName())  //Stream<String>
+                .map(Dish::getName)  //Stream<String>
+                .collect(Collectors.toList());  //List<String>
     }
     
     //400칼로리 이하인 메뉴를 다이어트로, 아닐 경우 일반으로 그룹핑해라.
