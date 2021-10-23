@@ -11,7 +11,7 @@ public class FunctionNegateAnd {
 		List<Apple> inventory = new ArrayList<>();
 		inventory.add(new Apple(150, "green"));
 		inventory.add(new Apple(200, "green"));
-		inventory.add(new Apple(200, "red"));
+		inventory.add(new Apple(250, "red"));
 		inventory.add(new Apple(150, "red"));
 
 		// Predicate 선언하기
@@ -20,9 +20,13 @@ public class FunctionNegateAnd {
 		Predicate<Apple> notRedApple = redApple.negate();
 		// red & weight > 150
 		Predicate<Apple> redHeavyApple = redApple.and(a -> a.getWeight() > 150);
-
 		System.out.println(filterApples2(inventory, notRedApple));
 		System.out.println(filterApples2(inventory, redHeavyApple));
+
+		// green or weight > 200
+		Predicate<Apple> greenApple = apple -> apple.getColor().equals("green");
+		filterApples2(inventory, greenApple.or(apple -> apple.getWeight() > 200))
+				.forEach(System.out::println);
 
 	}
 
