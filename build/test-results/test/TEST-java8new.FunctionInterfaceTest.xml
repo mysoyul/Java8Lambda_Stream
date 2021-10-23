@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="java8new.FunctionInterfaceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-23T01:57:21" hostname="LAPTOP-242K23FP" time="0.019">
+  <properties/>
+  <testcase name="iterable()" classname="java8new.FunctionInterfaceTest" time="0.019"/>
+  <system-out><![CDATA[lambda
+stream
+reactor
+lambda>>>
+stream>>>
+reactor>>>
+lambda
+stream
+reactor
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

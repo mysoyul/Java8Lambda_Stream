@@ -1,0 +1,18 @@
+java9new/Java9OptionalNewMethodsTest.java
+ java9new.Java9OptionalNewMethodsTest
+java9new/Java9ArrayCompareTest.java
+ java9new.Java9ArrayCompareTest
+java9new/Java9NewStreamAPITest.java
+ java9new.Java9NewStreamAPITest
+java9new/TryWithResourceTest.java
+ java9new.TryWithResourceTest
+java9new/Java9ListFactoryMethodTest.java
+ java9new.Java9ListFactoryMethodTest
+java9new/InputStreamTransferToTest.java
+ java9new.InputStreamTransferToTest
+java9new/Java9SetFactoryMethodTest.java
+ java9new.Java9SetFactoryMethodTest
+java8new/FunctionInterfaceTest.java
+ java8new.FunctionInterfaceTest
+ java8new.FunctionInterfaceTest$1
+ java8new.FunctionInterfaceTest$2

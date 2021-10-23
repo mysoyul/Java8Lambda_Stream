@@ -1,0 +1,200 @@
+java8new/_01lambda/functional/operator/OperatorExample.java
+ java8new._01lambda.functional.operator.OperatorExample
+java8new/comletableFuture/AsyncShopClient.java
+ java8new.comletableFuture.AsyncShopClient
+java8new/_02stream/without/optional/MobileService.java
+ java8new._02stream.without.optional.MobileService
+java9new/reactivestream/beans/Employee.java
+ java9new.reactivestream.beans.Employee
+java8new/_02stream/basic2/Transaction.java
+ java8new._02stream.basic2.Transaction
+java8new/comletableFuture/BestPriceFinder.java
+ java8new.comletableFuture.BestPriceFinder
+ java8new.comletableFuture.BestPriceFinder$1
+java8new/_02stream/basic2/_05Reducing.java
+ java8new._02stream.basic2._05Reducing
+java8new/_02stream/collect/_05PartitioningDishes.java
+ java8new._02stream.collect._05PartitioningDishes
+java9new/reactivestream/MyProcessor.java
+ java9new.reactivestream.MyProcessor
+java8new/comletableFuture/AsyncShop.java
+ java8new.comletableFuture.AsyncShop
+java9new/reactivestream/EmpHelper.java
+ java9new.reactivestream.EmpHelper
+java8new/_02stream/basic2/_01BuildingStreams.java
+ java8new._02stream.basic2._01BuildingStreams
+ java8new._02stream.basic2._01BuildingStreams$1
+ java8new._02stream.basic2._01BuildingStreams$2
+java8new/_02stream/basic2/_04Finding.java
+ java8new._02stream.basic2._04Finding
+java8new/_02stream/basic2/_03Mapping.java
+ java8new._02stream.basic2._03Mapping
+java8new/_02stream/basic2/_06NumericStreams.java
+ java8new._02stream.basic2._06NumericStreams
+java8new/_02stream/parallel/ForkJoinSumCalculator.java
+ java8new._02stream.parallel.ForkJoinSumCalculator
+java8new/_02stream/parallel/ParallelStreams.java
+ java8new._02stream.parallel.ParallelStreams
+ java8new._02stream.parallel.ParallelStreams$Accumulator
+java8new/dateapi/DateTimeExamples.java
+ java8new.dateapi.DateTimeExamples
+ java8new.dateapi.DateTimeExamples$1
+ java8new.dateapi.DateTimeExamples$NextWorkingDay
+java8new/_02stream/collect/CollectorHarness.java
+ java8new._02stream.collect.CollectorHarness
+java8new/_01lambda/functional/FunctionAndThenCompose.java
+ java8new._01lambda.functional.FunctionAndThenCompose
+java8new/_02stream/with/optional/Mobile.java
+ java8new._02stream.with.optional.Mobile
+java8new/_02stream/without/optional/Mobile.java
+ java8new._02stream.without.optional.Mobile
+java9new/reactivestream/MyReactiveApp.java
+ java9new.reactivestream.MyReactiveApp
+java8new/_02stream/collect/_01GroupingTransactions.java
+ java8new._02stream.collect._01GroupingTransactions
+ java8new._02stream.collect._01GroupingTransactions$Currency
+ java8new._02stream.collect._01GroupingTransactions$Transaction
+java8new/comletableFuture/v1/BestPriceFinder.java
+ java8new.comletableFuture.v1.BestPriceFinder
+ java8new.comletableFuture.v1.BestPriceFinder$1
+ java8new.comletableFuture.v1.BestPriceFinder$2
+ java8new.comletableFuture.v1.BestPriceFinder$3
+java8new/_02stream/with/optional/ScreenResolution.java
+ java8new._02stream.with.optional.ScreenResolution
+java8new/advanced/appc/StreamForker.java
+ java8new.advanced.appc.StreamForker
+ java8new.advanced.appc.StreamForker$BlockingQueueSpliterator
+ java8new.advanced.appc.StreamForker$ForkingStreamConsumer
+ java8new.advanced.appc.StreamForker$Results
+java8new/_02stream/without/optional/DisplayFeatures.java
+ java8new._02stream.without.optional.DisplayFeatures
+java8new/_01lambda/basic2/Apple.java
+ java8new._01lambda.basic2.Apple
+java8new/_02stream/parallel/WordCount.java
+ java8new._02stream.parallel.WordCount
+ java8new._02stream.parallel.WordCount$WordCounter
+ java8new._02stream.parallel.WordCount$WordCounterSpliterator
+java8new/_01lambda/basic2/FilteringApples.java
+ java8new._01lambda.basic2.FilteringApples
+java8new/_01lambda/functional/consumer/ConsumerDemo.java
+ java8new._01lambda.functional.consumer.ConsumerDemo
+ java8new._01lambda.functional.consumer.ConsumerDemo$Apple
+java8new/_02stream/basic1/StreamBasic.java
+ java8new._02stream.basic1.StreamBasic
+ java8new._02stream.basic1.StreamBasic$1
+java8new/_02stream/basic2/_02Filtering.java
+ java8new._02stream.basic2._02Filtering
+java8new/_02stream/without/optional/MobileTesterWithoutOptional.java
+ java8new._02stream.without.optional.MobileTesterWithoutOptional
+java8new/advanced/appa/Author.java
+ java8new.advanced.appa.Author
+java8new/comletableFuture/Util.java
+ java8new.comletableFuture.Util
+java8new/_01lambda/basic1/Apple.java
+ java8new._01lambda.basic1.Apple
+java8new/advanced/appa/Authors.java
+ java8new.advanced.appa.Authors
+java8new/_02stream/basic1/StreamVsCollection.java
+ java8new._02stream.basic1.StreamVsCollection
+java8new/_02stream/basic1/Dish.java
+ java8new._02stream.basic1.Dish
+ java8new._02stream.basic1.Dish$Type
+java8new/_02stream/basic2/PuttingIntoPractice.java
+ java8new._02stream.basic2.PuttingIntoPractice
+java8new/_02stream/with/optional/MobileTesterWithOptional.java
+ java8new._02stream.with.optional.MobileTesterWithOptional
+java9new/ImmutableList.java
+ java9new.ImmutableList
+java8new/comletableFuture/ExchangeService.java
+ java8new.comletableFuture.ExchangeService
+ java8new.comletableFuture.ExchangeService$Money
+java8new/_02stream/with/optional/DisplayFeatures.java
+ java8new._02stream.with.optional.DisplayFeatures
+java8new/advanced/appd/InnerClass.java
+ java8new.advanced.appd.InnerClass
+ java8new.advanced.appd.InnerClass$1
+java8new/_02stream/basic2/Trader.java
+ java8new._02stream.basic2.Trader
+java8new/_01lambda/basic3/Lambdas.java
+ java8new._01lambda.basic3.Lambdas
+ java8new._01lambda.basic3.Lambdas$Apple
+ java8new._01lambda.basic3.Lambdas$ApplePredicate
+java8new/_01lambda/functional/function/FunctionDemo.java
+ java8new._01lambda.functional.function.FunctionDemo
+ java8new._01lambda.functional.function.FunctionDemo$Apple
+java8new/_02stream/collect/ToListCollector.java
+ java8new._02stream.collect.ToListCollector
+java8new/comletableFuture/Quote.java
+ java8new.comletableFuture.Quote
+java8new/comletableFuture/v1/Shop.java
+ java8new.comletableFuture.v1.Shop
+java8new/_02stream/with/optional/MobileService.java
+ java8new._02stream.with.optional.MobileService
+java8new/advanced/appc/StreamForkerExample.java
+ java8new.advanced.appc.StreamForkerExample
+java9new/reactivestream/MyFreelancerSubscriber.java
+ java9new.reactivestream.MyFreelancerSubscriber
+java8new/comletableFuture/Discount.java
+ java8new.comletableFuture.Discount
+ java8new.comletableFuture.Discount$Code
+java8new/advanced/appd/Lambda.java
+ java8new.advanced.appd.Lambda
+java8new/_01lambda/functional/supplier/SupplierDemo.java
+ java8new._01lambda.functional.supplier.Car
+ java8new._01lambda.functional.supplier.SupplierDemo
+ java8new._01lambda.functional.supplier.Vehicle
+java9new/reactivestream/MyReactiveAppWithProcessor.java
+ java9new.reactivestream.MyReactiveAppWithProcessor
+java8new/_02stream/collect/Dish.java
+ java8new._02stream.collect.Dish
+ java8new._02stream.collect.Dish$Type
+java8new/comletableFuture/Shop.java
+ java8new.comletableFuture.Shop
+java8new/comletableFuture/v1/BestPriceFinderMain.java
+ java8new.comletableFuture.v1.BestPriceFinderMain
+java8new/_02stream/basic2/Laziness.java
+ java8new._02stream.basic2.Laziness
+java8new/comletableFuture/v1/ShopMain.java
+ java8new.comletableFuture.v1.ShopMain
+java9new/reactivestream/MySubscriber.java
+ java9new.reactivestream.MySubscriber
+java8new/_02stream/collect/_02Summarizing.java
+ java8new._02stream.collect._02Summarizing
+java8new/_02stream/parallel/ParallelStreamsHarness.java
+ java8new._02stream.parallel.ParallelStreamsHarness
+java8new/comletableFuture/BestPriceFinderMain.java
+ java8new.comletableFuture.BestPriceFinderMain
+java8new/_01lambda/basic3/ExecuteAround.java
+ java8new._01lambda.basic3.ExecuteAround
+ java8new._01lambda.basic3.ExecuteAround$BufferedReaderProcessor
+java9new/reactivestream/beans/Freelancer.java
+ java9new.reactivestream.beans.Freelancer
+java8new/_02stream/without/optional/ScreenResolution.java
+ java8new._02stream.without.optional.ScreenResolution
+java8new/_02stream/collect/PartitionPrimeNumbers.java
+ java8new._02stream.collect.PartitionPrimeNumbers
+ java8new._02stream.collect.PartitionPrimeNumbers$1
+ java8new._02stream.collect.PartitionPrimeNumbers$PrimeNumbersCollector
+ java8new._02stream.collect.PartitionPrimeNumbers$PrimeNumbersCollector$1
+java8new/_02stream/collect/_04GroupingDishes.java
+ java8new._02stream.collect._04GroupingDishes
+ java8new._02stream.collect._04GroupingDishes$CaloricLevel
+java9new/ProcessAPI.java
+ java9new.ProcessAPI
+java8new/_01lambda/functional/FunctionNegateAnd.java
+ java8new._01lambda.functional.FunctionNegateAnd
+java8new/_02stream/collect/_03Reducing.java
+ java8new._02stream.collect._03Reducing
+java8new/_02stream/basic2/_03Sorting.java
+ java8new._02stream.basic2._03Sorting
+ java8new._02stream.basic2._03Sorting$Apple
+ java8new._02stream.basic2._03Sorting$AppleComparator
+java8new/advanced/appa/Book.java
+ java8new.advanced.appa.Book
+java8new/_01lambda/basic1/FilteringApples.java
+ java8new._01lambda.basic1.FilteringApples
+ java8new._01lambda.basic1.FilteringApples$1
+ java8new._01lambda.basic1.FilteringApples$AppleColorPredicate
+ java8new._01lambda.basic1.FilteringApples$ApplePredicate
+ java8new._01lambda.basic1.FilteringApples$AppleRedAndHeavyPredicate
+ java8new._01lambda.basic1.FilteringApples$AppleWeightPredicate
