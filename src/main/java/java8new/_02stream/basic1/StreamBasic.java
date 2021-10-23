@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.toList;
 
 public class StreamBasic {
 
@@ -15,7 +16,8 @@ public class StreamBasic {
 
         // Java 8
         getLowCaloricDishesNamesInJava8(Dish.menu).forEach(System.out::println);
-
+        System.out.println("8 정렬 ---- ");
+        getLowCaloricDishesNamesInJava8DESC(Dish.menu).forEach(System.out::println);
     }
 
     public static List<String> getLowCaloricDishesNamesInJava7(List<Dish> dishes){
@@ -42,6 +44,7 @@ public class StreamBasic {
 
     //Java 8
     //Stream<Dish> -> Stream<String> -> List<String>
+    //정렬 Ascending
     public static List<String> getLowCaloricDishesNamesInJava8(List<Dish> dishes){
         return dishes.stream() //Stream<Dish>
                 .filter(dish -> dish.getCalories() <= 400)   //Stream<Dish>
@@ -49,8 +52,19 @@ public class StreamBasic {
                 .sorted(Comparator.comparing(Dish::getCalories))              //Method Reference
                 //.map(dish -> dish.getName())  //Stream<String>
                 .map(Dish::getName)  //Stream<String>
-                .collect(Collectors.toList());  //List<String>
+                .collect(toList());  //List<String>
     }
+    //정렬 Descending
+    public static List<String> getLowCaloricDishesNamesInJava8DESC(List<Dish> dishes){
+        Comparator<Dish> dishComparator = comparing(Dish::getCalories);
+
+        return dishes.stream()  //Stream<Dish>
+                .filter(dish -> dish.getCalories() <= 400)  //Stream<Dish>
+                .sorted(dishComparator.reversed())  //Stream<Dish>
+                .map(Dish::getName)                 //Stream<String>
+                .collect(toList());                 //List<String>
+    }
+
     
     //400칼로리 이하인 메뉴를 다이어트로, 아닐 경우 일반으로 그룹핑해라.
     public static Map<String, List<Dish>>  getGroupingMenu(List<Dish> dishes){
