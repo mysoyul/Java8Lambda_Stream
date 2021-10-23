@@ -76,9 +76,13 @@ java8new/_02stream/parallel/WordCount.java
  java8new._02stream.parallel.WordCount$WordCounterSpliterator
 java8new/_01lambda/basic2/FilteringApples.java
  java8new._01lambda.basic2.FilteringApples
-java8new/_01lambda/functional/consumer/ConsumerDemo.java
- java8new._01lambda.functional.consumer.ConsumerDemo
- java8new._01lambda.functional.consumer.ConsumerDemo$Apple
+java8new/_01lambda/basic1/FilteringApples.java
+ java8new._01lambda.basic1.FilteringApples
+ java8new._01lambda.basic1.FilteringApples$1
+ java8new._01lambda.basic1.FilteringApples$AppleColorPredicate
+ java8new._01lambda.basic1.FilteringApples$ApplePredicate
+ java8new._01lambda.basic1.FilteringApples$AppleRedAndHeavyPredicate
+ java8new._01lambda.basic1.FilteringApples$AppleWeightPredicate
 java8new/_02stream/basic1/StreamBasic.java
  java8new._02stream.basic1.StreamBasic
  java8new._02stream.basic1.StreamBasic$1
@@ -191,10 +195,7 @@ java8new/_02stream/basic2/_03Sorting.java
  java8new._02stream.basic2._03Sorting$AppleComparator
 java8new/advanced/appa/Book.java
  java8new.advanced.appa.Book
-java8new/_01lambda/basic1/FilteringApples.java
- java8new._01lambda.basic1.FilteringApples
- java8new._01lambda.basic1.FilteringApples$1
- java8new._01lambda.basic1.FilteringApples$AppleColorPredicate
- java8new._01lambda.basic1.FilteringApples$ApplePredicate
- java8new._01lambda.basic1.FilteringApples$AppleRedAndHeavyPredicate
- java8new._01lambda.basic1.FilteringApples$AppleWeightPredicate
+java8new/_01lambda/functional/consumer/ConsumerDemo.java
+ java8new._01lambda.functional.consumer.ConsumerDemo
+ java8new._01lambda.functional.consumer.ConsumerDemo$1
+ java8new._01lambda.functional.consumer.ConsumerDemo$Apple

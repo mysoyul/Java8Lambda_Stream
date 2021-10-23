@@ -22,7 +22,7 @@ public class FilteringApples {
 		});
 		green.forEach(apple -> System.out.println(apple));
 
-		System.out.println("120  Apples");
+		System.out.println("120 이상 Apples");
 		//Lambda expression
 		List<Apple> apples = filter(inventory, apple -> apple.getWeight() >= 120);
 		apples.forEach(System.out::println);
