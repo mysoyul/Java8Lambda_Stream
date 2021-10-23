@@ -38,6 +38,7 @@ public class _03Mapping {
                 .distinct()
                 .forEach(System.out::println);
 
+        //flatMap : Stream<String[]> --> Stream<String>
         words.stream()
                 .flatMap(word -> Arrays.stream(word.split("")))
                 .distinct()
