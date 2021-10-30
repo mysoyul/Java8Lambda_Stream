@@ -1,8 +1,10 @@
 package java8new._02stream.collect;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.summingDouble;
 
 public class _01GroupingTransactions {
 
@@ -24,6 +26,15 @@ public class _01GroupingTransactions {
         groupImperatively();
         groupFunctionally();
 
+        //통화별로 트랜잭션을 그룹핑하고, 해당 통화의 트랜잭션 합계
+        Map<Currency, Double> currencyDoubleMap = transactions.stream()
+                .collect(groupingBy(
+                        tx -> tx.getCurrency(),
+                        summingDouble(tx -> tx.getValue())
+                ));
+        System.out.println("currencyDoubleMap = " + currencyDoubleMap);
+
+        //
     }
     //Java 7
     private static void groupImperatively() {
@@ -44,7 +55,10 @@ public class _01GroupingTransactions {
     //Java8 groupingBy 사용
     private static void groupFunctionally() {
 
+        Map<Currency, List<Transaction>> txByCurrencyMap = transactions.stream()
+                .collect(groupingBy(Transaction::getCurrency));
 
+        System.out.println("TransactionByCurrency Map = " + txByCurrencyMap);
 
     }
 

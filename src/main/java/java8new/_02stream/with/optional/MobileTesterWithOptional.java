@@ -36,6 +36,9 @@ public class MobileTesterWithOptional {
 		DisplayFeatures features =
 				featuresOptional.orElseGet(() -> new DisplayFeatures("0.0", Optional.of(new ScreenResolution(0,0)) ));
 		System.out.println(features.getSize());
+
+		//features = featuresOptional.orElseThrow(() -> new RuntimeException("DisplayFeature Not Found"));
+
 	}
 
 }
