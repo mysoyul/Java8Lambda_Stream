@@ -4,7 +4,9 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.Locale;
 
 public class LocalDateTimeTest {
     public static void main(String[] args) {
@@ -36,6 +38,17 @@ public class LocalDateTimeTest {
         System.out.println("localDate = " + localDate);
         LocalTime localTime = now.toLocalTime();
         System.out.println("localTime = " + localTime);
-        
+
+        //특정 날짜와 시간을 지정해서 LocalDateTime 생성
+        LocalDateTime localDateTime = LocalDateTime.of(2021, 11, 2, 15, 30, 40, 0);
+
+        //Formatter 설정
+        //localDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        System.out.println("LocalDateTime = " + localDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        //format을 직접 지정해서 Formatter 생성하기
+        DateTimeFormatter myFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss E a", Locale.KOREA);
+        System.out.println("LocalDateTime = " + localDateTime.format(myFormatter));
+
     }
 }
