@@ -18,7 +18,7 @@ public class Java9ListFactoryMethodTest {
     public void testImmutableListNotModified() {
 
     	System.out.println("aaa");
-        List<String> cerealMix = List.of("Papaya", "Raisin", "Dried Apple", "Dried Peach");
+        var cerealMix = List.of("Papaya", "Raisin", "Dried Apple", "Dried Peach");
         System.out.println(cerealMix.size());
         
         assertEquals(4, cerealMix.size());
