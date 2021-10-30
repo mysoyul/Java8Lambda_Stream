@@ -3,10 +3,7 @@ package java8new._02stream.collect;
 import static java.util.stream.Collectors.*;
 import static java8new._02stream.collect.Dish.menu;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 public class _04GroupingDishes {
 
@@ -53,16 +50,29 @@ public class _04GroupingDishes {
     }
     //4. type별 갯수 카운팅
     private static Map<Dish.Type, Long> countDishesInGroups() {
-        return null;
+
+        return menu.stream().collect(groupingBy(Dish::getType, counting()));
     }
-    //5. type별 그룹에서 가장 칼로리가 높은 Dish 찾기
+    //5. type별 그룹에서 가장 칼로리가 높은 Dish 찾기 - reducing()
     private static Map<Dish.Type, Optional<Dish>> mostCaloricDishesByType() {
-        return null;
+
+        return menu.stream().collect(
+                groupingBy(
+                    Dish::getType,
+                    reducing((d1,d2) -> d1.getCalories() > d2.getCalories() ? d1:d2)
+                ));
     }
     //5.1 type별 그룹에서 가장 칼로리가 높은 Dish 찾기 - collectingAndThen() 사용
     private static Map<Dish.Type, Dish> mostCaloricDishesByTypeWithoutOptionals() {
-        return null;
-        		    
+        return menu.stream().collect(
+                groupingBy(
+                        Dish::getType,
+                        collectingAndThen(
+                                maxBy(Comparator.comparingInt(Dish::getCalories)),
+                                Optional::get
+                        )
+                )
+        );
     }
 
     //6. type별로 그룹핑하여 칼로리의 합계 내기
