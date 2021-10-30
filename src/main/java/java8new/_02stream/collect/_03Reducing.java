@@ -1,5 +1,8 @@
 package java8new._02stream.collect;
 
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.reducing;
 import static java8new._02stream.collect.Dish.menu;
 
 public class _03Reducing {
@@ -13,19 +16,23 @@ public class _03Reducing {
 
     //1. Collectors.reducing() 사용 - 칼로리 합
     private static int calculateTotalCalories() {
-        return 0;
+
+        return menu.stream().collect(reducing(0, Dish::getCalories, (d1, d2) -> d1 + d2));
     }
-    //2. Method Reference 로 Collectors.reducing() 사용
+    //2. Method Reference 로 Collectors.reducing(), Integer의 sum() 사용
     private static int calculateTotalCaloriesWithMethodReference() {
-        return 0;
+                                                                         //(d1,d2) -> Integer.sum(d1,d2)
+        return menu.stream().collect(reducing(0, Dish::getCalories, Integer::sum));
     }
-    //3.map() 사용
+    //3.map(), reduce() 사용
     private static int calculateTotalCaloriesWithoutCollectors() {
-        return 0;
+
+        return menu.stream().map(Dish::getCalories).reduce(Integer::sum).get();
     }
 
-    //4. mapToInt() 사용
+    //4. mapToInt(), IntStream의 sum() 사용
     private static int calculateTotalCaloriesUsingSum() {
+
         return menu.stream().mapToInt(Dish::getCalories).sum();
     }
 }
