@@ -3,7 +3,9 @@ package java8new._02stream.basic2;
 import java8new._02stream.basic1.Dish;
 
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.stream.IntStream;
 
 
 public class _05Reducing {
@@ -33,12 +35,23 @@ public class _05Reducing {
                 .reduce((d1, d2) -> d1 + d2)
                 .get();
         System.out.println(totalCalory);
+        
         //2. reduce() 함수 - Integer의 sum() 사용
         totalCalory = Dish.menu.stream()
                         .map(Dish::getCalories)
                         .reduce(Integer::sum)
                         .get();
         System.out.println(totalCalory);
+        //3. reduce() 대신 mapToInt() 사용해서 IntStream으로 변환
+        totalCalory = 
+        Dish.menu.stream()  //Steam<Dish>
+                .mapToInt(Dish::getCalories) //IntStream
+                .sum();
+        System.out.println("totalCalory = " + totalCalory);
+
+        //IntStream의 집계함수들을 제공하는 summaryStatistics() 사용
+        IntSummaryStatistics summaryStatistics = IntStream.rangeClosed(1, 100).summaryStatistics();
+        System.out.println("SummaryStatistics = " + summaryStatistics);
 
     }
 }
