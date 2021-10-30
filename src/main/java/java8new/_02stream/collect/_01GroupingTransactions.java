@@ -3,8 +3,7 @@ package java8new._02stream.collect;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.summingDouble;
+import static java.util.stream.Collectors.*;
 
 public class _01GroupingTransactions {
 
@@ -34,7 +33,14 @@ public class _01GroupingTransactions {
                 ));
         System.out.println("currencyDoubleMap = " + currencyDoubleMap);
 
-        //
+        //통화별로 트랜잭션을 그룹핑하고, 트랜잭션의 value가 5000 초과인 경우를 구분해서 분류하기
+        Map<Currency, Map<Boolean, List<Transaction>>> map = transactions.stream()
+                .collect(groupingBy(
+                            Transaction::getCurrency,
+                            partitioningBy(tx -> tx.getValue() > 5000)
+                ));
+        System.out.println("PartioningBy = " + map);
+
     }
     //Java 7
     private static void groupImperatively() {
